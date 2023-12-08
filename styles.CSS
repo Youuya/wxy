@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.myanimelist.net/images/anime/1623/110360l.jpg');
+  background-size: cover;
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pink {
+  top: 50px;
+  left: 50px;
+  background-image: url('https://www.downloadclipart.net/large/hot-pink-heart-transparent-png.png');
+}
+
+.blue {
+  top: 50px;
+  left: calc(50% - 50px);
+  background-image: url('https://th.bing.com/th/id/R.3879f430ccf4d5e270ae4276b36fbaee?rik=E%2fRHEqcTHPc6bA&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f212-2122344_blue-heart-sticker-discord-blue-heart-emoji.png&ehk=jiUQSdWM0OKvpQEvocWV%2bvbsRGpKp1LeMlFF1JMjCac%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.black {
+  top: 50px;
+  right: 50px;
+  background-image: url('https://th.bing.com/th/id/R.e906a74d6be16a2447c36a9e13362cc3?rik=jfp0pk9kFOoENQ&riu=http%3a%2f%2fclipart-library.com%2fnewhp%2fBlack-Heart-Symbol-PNG-Clipart.png&ehk=p32MaKBWMu9%2f2eS8TfNEiUEQ9rbSVXElII4z3NpqEL0%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.message {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+#pink-message {
+  top: 180px;
+}
+
+#blue-message {
+  top: 180px;
+}
+
+#black-message {
+  top: 180px;
+}
+
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.heart-image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(0.2);
+    opacity: 0;
+  }
+}

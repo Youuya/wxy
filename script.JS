@@ -15,7 +15,7 @@ document.getElementById('black-heart').addEventListener('click', function() {
     for (let i = 0; i < 100; i++) {
       const heart = document.createElement('div');
       heart.classList.add('heart-image');
-      heart.style.backgroundImage = 'url("https://th.bing.com/th/id/OIP.iazsuFmtm73sgdLVuVLMBwHaHa?rs=1&pid=ImgDetMain")'; // Replace with heart icon URL
+      heart.style.backgroundColor = "white";
       heart.style.left = Math.random() * window.innerWidth + 'px';
       heartsContainer.appendChild(heart);
     }
